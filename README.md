@@ -1,14 +1,16 @@
-# DwD
-Design with Data
+# Design with data - University of Edinburgh
 
-## File
-code
-image
-...
 
-## Group Member
-sally
-vicky
-hong
-yaguang
-liquan
+## Repository structure
+.
+|──
+└── README.md
+
+## Team Members
+Sally
+Vicky
+Hong
+Yaguang
+Liquan
+
+## Depedencies
