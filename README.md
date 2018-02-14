@@ -2,9 +2,11 @@
 
 
 ## Repository structure
+```
 .
-|──
 └── README.md
+
+```
 
 ## Team Members
 Sally
