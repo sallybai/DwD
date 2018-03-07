@@ -5,9 +5,9 @@
 ```
 .
 └── scentmap_wab (web application to generate the personalised scentmap)
-		└── static
-		└── template
-		└── scentmap.py
+|	└── static
+|	└── template
+|	└── scentmap.py
 └── README.md
 
 ```

@@ -1,10 +1,7 @@
 
 # coding: utf-8
 
-# In[1]:
-
-
-###
+#
 # API attributes
 ###
 user_api_key = "EEAOT77192IH0PCK" # https://thingspeak.com/account/profile
