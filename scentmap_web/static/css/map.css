@@ -9,3 +9,7 @@
     text-align: center;
     color: gray;
 }
+p{margin:0;}
+.info{
+	position:absolute;
+	top: 0;}

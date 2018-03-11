@@ -3,20 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Highmaps Example</title>
-<script src="../static/js/jquery-1.8.3.min.js"></script>
 <style type="text/css">
-#container {
-    height: 500px; 
-    min-width: 310px; 
-    max-width: 800px; 
-    margin: 0 auto; 
-}
-.loading {
-    margin-top: 10em;
-    text-align: center;
-    color: gray;
-}
+body{width:760px;}
+#container {height: 500px; width: 500px; min-width: 310px; max-width: 800px; float:left;}
+.loading { margin-top: 10em;text-align: center;color: gray;}
+p{margin:0;}
+a{text-decoration:none;}
+.info{ float:left;top: 0;line-height:1.5; width:260px;}
+.info .data{border-radius:4px;border: 2px solid #eeeeee; width:200px;height:4.5em;padding:5px 20px;font-size:14px;margin:6px 0;}
+.highcharts-credits{display:none;}
 </style>
+<script src="../static/js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript">
 var data = {{ data|safe }};
 var data_spot = data[0];
@@ -357,14 +354,75 @@ console.log(data_spot);
             }]
         });
     });
+
 </script>
 </head>
 <body data-gr-c-s-loaded="true">
     <script src="../static/js/highmaps.js"></script>
     <script src="../static/js/exporting.js"></script>
     <script src="../static/js/gb-all.js"></script>
+
     <div id="container">
+    </div>
+    <div class="info">
+        <div class="data-1 data">
+            <p class="region"><!-- cardiff -->sadasd</p>
+            <p class="time"><!-- time --></p>
+            <p class="plant"><!-- plant --></p>
+        </div>
+        <div class="data-2 data">
+            <p class="region"><!-- cardiff -->sadasd</p>
+            <p class="time"><!-- time --></p>
+            <p class="plant"><!-- plant --></p>
+        </div>
+        <div class="data-3 data">
+            <p class="region"><!-- cardiff -->sadasd</p>
+            <p class="time"><!-- time --></p>
+            <p class="plant"><!-- plant --></p>
+        </div>
+        <div class="data-4 data">
+            <p class="region"><!-- cardiff -->sadasd</p>
+            <p class="time"><!-- time --></p>
+            <p class="plant"><!-- plant --></p>
+        </div>
+        <div class="data-5 data">
+            <p class="region"><!-- cardiff -->sadasd</p>
+            <p class="time"><!-- time --></p>
+            <p class="plant"><!-- plant --></p>
+        </div>
     </div>
     <button><a href="/cleardata">next one</a></button>
 </body>
+<script type="text/javascript">
+
+if(data_spot['region_id'] == 0){
+    //cardiff
+    $('.data-1 .region').text('Name: '+data_spot['region_name']);
+    $('.data-1 .time').text('Time:   '+data_spot['time']);
+    $('.data-1 .plant').text('Plant: '+data_spot['plant']);
+    $('.data-1').css({'border-color':data_spot['color'],'background-color':'rgba(111,255,158,0.2)'})
+}/*else if(data_spot['region_id'] == 1){
+    //Fermanagh
+    $('.data-2 .region').text(data_spot['region_name']);
+    $('.data-2 .time').text(data_spot['time']);
+    $('.data-2 .plant').text(data_spot['plant']);
+}else if(data_spot['region_id'] == 2){
+    //Lancashire
+    $('.data-3 .region').text(data_spot['region_name']);
+    $('.data-3 .time').text(data_spot['time']);
+    $('.data-3 .plant').text(data_spot['plant']);
+}else if(data_spot['region_id'] == 3){
+    //Perthshire and Kinross
+    $('.data-4 .region').text(data_spot['region_name']);
+    $('.data-4 .time').text(data_spot['time']);
+    $('.data-4 .plant').text(data_spot['plant']);
+}else if(data_spot['region_id'] == 4){
+    //Buckinghamshire
+    $('.data-5 .region').text(data_spot['region_name']);
+    $('.data-5 .time').text(data_spot['time']);
+    $('.data-5 .plant').text(data_spot['plant']);
+}*/else{
+    console.log(data_spot['region_id']);
+}
+</script>
 </html>
