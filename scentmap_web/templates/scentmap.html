@@ -11,6 +11,10 @@ p{margin:0;}
 a{text-decoration:none;}
 .info{ float:left;top: 0;line-height:1.5; width:260px;}
 .info .data{border-radius:4px;border: 2px solid #eeeeee; width:200px;height:4.5em;padding:5px 20px;font-size:14px;margin:6px 0;}
+.info .data-2{border-color:#ff6f6f;background-color: rgba(255,111,111,0.3);}
+.info .data-3{border-color:#fff06f;background-color: rgba(255,240,111,0.3);}
+.info .data-4{border-color:#c46fff;background-color: rgba(196,111,255,0.3);}
+.info .data-5{border-color:#6fdbff;background-color: rgba(111,219,255,0.3);}
 .highcharts-credits{display:none;}
 </style>
 <script src="../static/js/jquery-1.8.3.min.js"></script>
@@ -40,6 +44,7 @@ if(data_spot['region_id'] == 0){
 }else{
     console.log(data_spot['region_id']);
 }
+data_spot['time'] = data_spot['time']/10000;
 
 console.log(data_spot);
 
@@ -366,34 +371,35 @@ console.log(data_spot);
     </div>
     <div class="info">
         <div class="data-1 data">
-            <p class="region"><!-- cardiff -->sadasd</p>
+            <p class="region"><!-- cardiff --></p>
             <p class="time"><!-- time --></p>
             <p class="plant"><!-- plant --></p>
         </div>
-        <div class="data-2 data">
-            <p class="region"><!-- cardiff -->sadasd</p>
-            <p class="time"><!-- time --></p>
-            <p class="plant"><!-- plant --></p>
+        <div class="data-2 data" >
+            <p class="region"><!-- cardiff -->Name: Fermanagh</p>
+            <p class="time"><!-- time -->Time: 4.12</p>
+            <p class="plant"><!-- plant -->Plant: Hyacinthoides non-scripta</p>
         </div>
         <div class="data-3 data">
-            <p class="region"><!-- cardiff -->sadasd</p>
-            <p class="time"><!-- time --></p>
-            <p class="plant"><!-- plant --></p>
+            <p class="region"><!-- cardiff -->Name: Lancashire</p>
+            <p class="time"><!-- time -->Time: 3.34</p>
+            <p class="plant"><!-- plant -->Plant: Hedera helix</p>
         </div>
         <div class="data-4 data">
-            <p class="region"><!-- cardiff -->sadasd</p>
-            <p class="time"><!-- time --></p>
-            <p class="plant"><!-- plant --></p>
+            <p class="region"><!-- cardiff -->Name: Perthshire and Kinross</p>
+            <p class="time"><!-- time -->Time: 0.34</p>
+            <p class="plant"><!-- plant -->Plant: Impatiens glandulifera</p>
         </div>
         <div class="data-5 data">
-            <p class="region"><!-- cardiff -->sadasd</p>
-            <p class="time"><!-- time --></p>
-            <p class="plant"><!-- plant --></p>
+            <p class="region"><!-- cardiff -->Name: Buckinghamshire</p>
+            <p class="time"><!-- time -->Time: 1.34</p>
+            <p class="plant"><!-- plant -->Plant: Hyacinthoides hispanica</p>
         </div>
     </div>
     <button><a href="/cleardata">exit</a></button>
 </body>
 <script type="text/javascript">
+
 
 if(data_spot['region_id'] == 0){
     //cardiff
@@ -401,7 +407,7 @@ if(data_spot['region_id'] == 0){
     $('.data-1 .time').text('Time:   '+data_spot['time']);
     $('.data-1 .plant').text('Plant: '+data_spot['plant']);
     $('.data-1').css({'border-color':data_spot['color'],'background-color':'rgba(111,255,158,0.2)'})
-}/*else if(data_spot['region_id'] == 1){
+}else if(data_spot['region_id'] == 1){
     //Fermanagh
     $('.data-2 .region').text(data_spot['region_name']);
     $('.data-2 .time').text(data_spot['time']);
@@ -421,7 +427,7 @@ if(data_spot['region_id'] == 0){
     $('.data-5 .region').text(data_spot['region_name']);
     $('.data-5 .time').text(data_spot['time']);
     $('.data-5 .plant').text(data_spot['plant']);
-}*/else{
+}else{
     console.log(data_spot['region_id']);
 }
 </script>
