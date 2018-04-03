@@ -497,31 +497,31 @@
         if (i == 0) {
             //Buckinghamshire
             $('.data-5 .region').text('Name: ' + data[0]['region_name']);
-            $('.data-5 .time').text('Time:   ' + data[0]['time']);
+            $('.data-5 .time').text('Time:   ' + data[0]['time']/1000);
             $('.data-5 .plant').text('Plant: ' + data[0]['plant']);
             $('.data-5').css({ 'border-color': data[0]['color'], 'background-color': 'rgba(192, 172, 188,0.2)' })
         } else if (i == 1) {
             //Lancashire
             $('.data-3 .region').text('Name: ' + data[1]['region_name']);
-            $('.data-3 .time').text('Time:   ' + data[1]['time']);
+            $('.data-3 .time').text('Time:   ' + data[1]['time']/1000);
             $('.data-3 .plant').text('Plant: ' + data[1]['plant']);
             $('.data-3').css({ 'border-color': data[1]['color'], 'background-color': 'rgba(226,196,208,0.2)' })
         } else if (i == 2) {
             //Fermanagh
             $('.data-2 .region').text('Name: ' + data[2]['region_name']);
-            $('.data-2 .time').text('Time:   ' + data[2]['time']);
+            $('.data-2 .time').text('Time:   ' + data[2]['time']/1000);
             $('.data-2 .plant').text('Plant: ' + data[2]['plant']);
             $('.data-2').css({ 'border-color': data[2]['color'], 'background-color': 'rgba(206,205,230,0.2)' })
         } else if (i == 3) {
             //Perthshire and Kinross
             $('.data-1 .region').text('Name: ' + data[3]['region_name']);
-            $('.data-1 .time').text('Time:   ' + data[3]['time']);
+            $('.data-1 .time').text('Time:   ' + data[3]['time']/1000);
             $('.data-1 .plant').text('Plant: ' + data[3]['plant']);
             $('.data-1').css({ 'border-color': data[3]['color'], 'background-color': 'rgba(62,25,53,0.2)' })
         } else if (i == 4) {
             //cardiff
             $('.data-4 .region').text('Name: ' + data[4]['region_name']);
-            $('.data-4 .time').text('Time:   ' + data[4]['time']);
+            $('.data-4 .time').text('Time:   ' + data[4]['time']/1000);
             $('.data-4 .plant').text('Plant: ' + data[4]['plant']);
             $('.data-4 ').css({ 'border-color': data[4]['color'], 'background-color': 'rgba(117, 89, 134, 0.2)' })
         } else {
