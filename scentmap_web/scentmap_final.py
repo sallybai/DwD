@@ -28,7 +28,7 @@ region_dict = {446610: "Buckinghamshire", 446611: "Lancashire",
                446613: "Fermanagh", 446614: "Kinross", 446615: "Cardiff"}
 gps_dict = {446610: (51.83333333, 0.83333333), 446611: (53.8, 2.6), 
             446613: (54.48861111, -7.73611111), 446614: (56.25, 3.41666667), 446615: (51.483333, -3.183333)}
-plant_dict = {446610: "Hyacinthoides hispanica", 446611: "Hedera helix", 
+plant_dict = {446610: "Hyacinthoides hispanica", 446611: "Geranium robertianum", 
               446613: "Hyacinthoides non-scripta", 446614: "Impatiens glandulifera", 446615: "Bellis perennis"}
 
 
