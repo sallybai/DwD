@@ -78,31 +78,31 @@
         var data = [
             {
                 'hc-key': 'gb-ca',
-                value: data[4]['time'],
+                value: data[4]['time']/1000,
                 color: '#755986',
                 namep: 'Cardiff',
                 plant: data[4]['plant']
             }, {
                 'hc-key': 'gb-fe',
-                value: data[2]['time'],
+                value: data[2]['time']/1000,
                 color: '#cecde6',
                 namep: 'Fermanagh',
                 plant: data[2]['plant']
             }, {
                 'hc-key': 'gb-la',
-                value: data[1]['time'],
+                value: data[1]['time']/1000,
                 color: '#e2c4d0',
                 namep: 'Lancashire',
                 plant: data[1]['plant']
             }, {
                 'hc-key': 'gb-2458',
-                value: data[3]['time'],
+                value: data[3]['time']/1000,
                 color: '#3e1935',
                 namep: 'Perthshire and Kinross',
                 plant: data[3]['plant']
             }, {
                 'hc-key': 'gb-bu',
-                value: data[0]['time'],
+                value: data[0]['time']/1000,
                 color: '#ae7b9e',
                 namep: 'Buckinghamshire',
                 plant: data[0]['plant']
@@ -387,7 +387,7 @@
             },
 
             legend: {
-                enabled: true
+                enabled: false
             },
 
             series: [{
