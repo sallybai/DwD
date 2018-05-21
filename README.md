@@ -9,7 +9,7 @@
 |	└── template
 |	└── scentmap.py
 └── arduino
-| └── dwd_arduino.ino
+|    └── dwd_arduino.ino
 └── README.md
 ```
 
@@ -22,13 +22,18 @@ Liquan
 
 ## Depedencies
 scentmap_web:
+
   Python 3.5.4
+  
   Flask
+  
   requests
  
 Arduino:
   Adafruit_NeoPixel
+  
   TimedAction https://playground.arduino.cc/Code/TimedAction
+  
   NOTE: This library has an issue on newer versions of Arduino. After downloading the library you MUST go into the library directory and edit TimedAction.h. Within, overwrite WProgram.h with Arduino.h
   
 
